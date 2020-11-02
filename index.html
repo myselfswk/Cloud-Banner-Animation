@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Cloud Banner Animation</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="cloud">
+                <!--So in CSS we can declare variables. In this case we're setting i = 1 for the first set of clouds. and i = 2 for
+                    the second set of clouds.
+                    The reason we're doing this is to have the clouds translating or moving at different speeds. He could have set a different
+                    animation-duration for each cloud but that would require more rule sets.-->
+                <!--So example:
+                        .cloud 1 {
+                            animation: animate 8s linear infinite;
+                        }
+                        .cloud 2 {
+                            animation: animate 16s linear infinite;
+                        }
+                -->
+                <img src="./Images/cloud1.png" style="--i:1" alt="First Cloud">
+                <img src="./Images/cloud2.png" style="--i:2" alt="Second Cloud">
+                <img src="./Images/cloud3.png" style="--i:3" alt="Third Cloud">
+                <img src="./Images/cloud4.png" style="--i:4" alt="Fourth Cloud">
+                <img src="./Images/cloud5.png" style="--i:5" alt="Fifth Cloud">
+            </div>
+        </div>
+        <section>
+            <h1>Muhammad Waleed Khan</h1>
+            <p>My Name is Muhammad Waleed Khan & I'm a Web Developer, WordPress Website Designer, SEO Expert & Content Writer.</p>
+        </section>
+    </body>
+</html>
